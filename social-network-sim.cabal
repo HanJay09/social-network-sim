@@ -1,0 +1,33 @@
+cabal-version: 2.2
+
+-- This file has been generated from package.yaml by hpack version 0.37.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           social-network-sim
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/social-network-sim#readme>
+author:         Han Jay Tan
+maintainer:     hanjay2003@gmail.com
+copyright:      2026 Han Jay Tan
+license:        BSD-3-Clause
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+executable social-network-sim-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_social_network_sim
+  autogen-modules:
+      Paths_social_network_sim
+  hs-source-dirs:
+      app
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , random
+    , time
+  default-language: Haskell2010
